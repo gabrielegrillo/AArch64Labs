@@ -1,0 +1,42 @@
+Esercizio 1:
+    - Commenti:
+        /* 
+        * load e print mesg1
+        * load e print mesg2
+        * load e print mesg1
+        */
+        // return 0
+    - Etichette:
+        - mesg1
+        - mesg2
+        - main
+    - Direttive:
+        - .global main
+        - .section .rodata
+        - .asciz 
+        - .text 
+        - .size main, (. - main)
+    - Istruzioni:
+        - stp
+        - adr
+        - bl
+        - mov
+        - ldp
+        - ret
+    - Output:
+    ********************************
+    *Architettura degli Elaboratori*
+    ********************************
+
+Esercizio 2:
+    - a: 33221100 77665544. quindi 8 byte
+        Corrispondono alla lista di word. Ogni elemento pesa 4 byte
+        (word: dipende dai bit del processore tipo 32 o 64bit, in questo caso 32/8 = 4 byte). 
+    - b: perche usa little-endian
+    - c: 
+    0000 00112233 44556677 8899aabb ccddeeff 0100 02030499 01
+    0001 99102030 40
+    - d: 3 byte (a coppie)
+    - e: perche bool occupa 4 byte ed allineato al tipo word 
+
+Esercizio 3:

@@ -1,0 +1,82 @@
+Esercizio 1:
+    1: mov x20, #5
+    x20 ha valore 5
+    -------------------
+    2: ror w21, w20, #2
+    x20 = 5
+    ror effettua la rotazione verso dx
+    esempio 
+    a: 0000 0011
+    dopo ror di 1
+    b: 1000 0001
+    ror di 2
+    c: 1100 0000
+
+    5 in bin: 101
+    0000000000 0000000000 000000000101 (32 bit)
+    010000000000 0000000000 0000000001
+    2^30 = 1073741824 + 1 = 1073741825
+    w21 = 1073741825
+    ------------------
+    3: umnegl x22, w20, w21
+    x22 = - (w20 * w21)
+    5 * 1073741825 = 5368709125
+    = -5368709125
+    x20 or w20 = 5
+    w21 = 1073741825
+    x22 = -5368709125
+    ------------------
+    4: neg x20, x20
+    x20 = 5 => -5
+    w21 = 1073741825
+    x22 = -5368709125
+    ------------------
+    5: sdiv x22, x22, x20
+    divide ma con il ris del segno.
+    x22 = -5368709125 // -5
+    = 1073741825
+
+Esercizio 2:
+    1 e 2: mov w20, #20; mov w21, #10
+    w20 = 20 e w21 = 10
+
+    3: cmp w20, w21
+    = w20 - w21 e setta il falg in PSTATE
+    = 10 (in questo caso )
+
+    4: csel w1, w20, w21, lt
+    if w20 < w21:
+        w1 = w20
+    else:
+        w1 = w21 
+
+    in questo caso: w1 = w21 quindi stampa w21 ovvero 10
+
+    riguardare adr!!!
+
+    5: sub w20, w20, w21
+
+    w20 = w20(contenuto: 20) - w21 (10)
+    w20 = 10
+
+    6: cmp w20, w21
+    w20 - w21 = 0 
+    flag zero settato a 1
+
+    7: cset w1, eq 
+    cset e' come csel rd, 1, 0, cond
+    eq: flag zero = 1
+    if (eq):
+        w20 = 1 
+    else:
+        w20 = 0
+
+    in questo caso: w20 = 1
+
+Esercizio 3: 
+
+
+
+
+
+

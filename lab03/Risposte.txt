@@ -1,0 +1,14 @@
+Esercizio 1:
+    a)  size x: 9; 
+        perche ogni elemento dell'array di short corrisponde a 2. ogni elemento corrisponde
+        a 2 byte. 9 (len array) * 2 = 18 
+        size s: 16; 
+        Len stringa: 21 + 1 byte per il char null. 22 in hex = 22
+    b) non cambia niente
+    c) Memorizza soltanto l'ultimo valore calcolato
+    d) symbol `size' is already defined
+
+Esercizio 2:
+a) 0
+punto b:
+

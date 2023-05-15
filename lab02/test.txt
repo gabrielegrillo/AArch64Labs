@@ -1,0 +1,14 @@
+esercizio2_parte1.o:     file format elf64-littleaarch64
+
+Contents of section .data:
+ 0000 33221100 77665544 bbaa9988 ffeeddcc  3"..wfUD........
+ 0010 99403020 10                          .@0 .
+
+
+ ---
+
+esercizio2_parte1.o:     file format elf64-littleaarch64
+
+Contents of section .data:
+ 0000 33221100 77665544 bbaa9988 ffeeddcc  3"..wfUD........
+ 0010 99000000 40302010                    ....@0 .
