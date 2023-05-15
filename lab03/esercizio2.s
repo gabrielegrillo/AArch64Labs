@@ -16,7 +16,7 @@ fmt:
 main:
     stp x29, x30, [sp, #-16]!
 
-    .ifndef CONSTANT
+    .ifndef CONSTANT // if the symbol constant is Not Defined
         print 1
     .else
         print 0

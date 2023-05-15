@@ -6,7 +6,7 @@ debug:
 warning: 
     .asciz "WARNING on\n"
 
-.equ LOG_LEVEL, 12
+.equ LOG_LEVEL, 30
 .equ DEBUG, 10
 .equ INFO, 20
 .equ WARNING, 30

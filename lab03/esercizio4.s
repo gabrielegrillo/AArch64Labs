@@ -19,7 +19,7 @@ n:
 .macro add_to_n value
     ldr x8, =n
     ldrb w9, [x8]
-    .if \value >= 0
+    .if \value >= 0 // "\value" refers to local parameter value
         adds w9, w9, #\value
     .else
         subs w9, w9, #-\value
@@ -33,7 +33,7 @@ n:
 main:
     stp x29, x30, [sp, #-16]!
 
-    add_to_n 1
+    add_to_n -1
     print
 
     // return 0
