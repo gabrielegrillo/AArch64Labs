@@ -1,5 +1,6 @@
 .section .rodata
 fmt: .asciz "%d\n"
+fmt_somma: .asciz "Sum: %d\n"
 .align 2
 
 .data
@@ -32,27 +33,24 @@ main:
     ldr w4, [x2, x3]
     add w1, w1, w4
     
+    // Prima posizione
     add x3, x3, #1
-    // Modificare la seguente istruzione ldr per caricare in w4 l'elemento in posizione 1 nell'array n
-    // ldr w4, [x2, x3]
+    ldr w4, [x2, x3, lsl #2]
     add w1, w1, w4
     
     add x3, x3, #1
-    // Modificare la seguente istruzione ldr per caricare in w4 l'elemento in posizione 2 nell'array n
-    // ldr w4, [x2, x3]
+    ldr w4, [x2, x3, lsl #2]
     add w1, w1, w4
     
     add x3, x3, #1
-    // Modificare la seguente istruzione ldr per caricare in w4 l'elemento in posizione 3 nell'array n
-    // ldr w4, [x2, x3]
+    ldr w4, [x2, x3, lsl #2]    
     add w1, w1, w4
     
     add x3, x3, #1
-    // Modificare la seguente istruzione ldr per caricare in w4 l'elemento in posizione 4 nell'array n
-    // ldr w4, [x2, x3]
+    ldr w4, [x2, x3, lsl #2]
     add w1, w1, w4
 
-    adr x0, fmt
+    adr x0, fmt_somma
     bl printf
     // print the sum using register offset addressing: end
     

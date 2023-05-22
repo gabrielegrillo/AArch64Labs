@@ -19,8 +19,18 @@ n: .word 3, 13, 23, 33
 main:
     stp x29, x30, [sp, #-16]!
 
+    mov w0, #0
     /* Aggiungere di seguito istruzioni ldr/str oppurtune 
        per risolvere prima il punto a) poi il punto b) e poi il punto c) */
+    ldr x2, =n
+    ldr x3, x
+
+    str x3, [x2]
+    str x3, [x2, #4]!
+    str x3, [x2, #4]!
+    str x3, [x2, #4]!
+
+    // provare con stp 
 
     print 0
     print 1

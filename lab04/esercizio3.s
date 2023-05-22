@@ -23,6 +23,12 @@ main:
     /* Aggiungere di seguito istruzioni ldr/str oppurtune 
        per risolvere prima il punto a) e poi il punto b) */
 
+    ldr x2, =n
+
+    str w0, [x2]
+    str w0, [x2, #8]!
+    str w0, [x2, #8]!
+
     print 0
     print 1
     print 2

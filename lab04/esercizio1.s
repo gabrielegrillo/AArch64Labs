@@ -25,7 +25,7 @@ main:
     ldr x2, =n
     
     //Esempio 1
-    //ldr w1, [x2]
+    //ldr w1, [x2] 
     //print_32
 
     //Esempio 2

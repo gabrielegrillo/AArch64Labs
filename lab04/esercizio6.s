@@ -15,7 +15,7 @@ main:
         il contenuto del registro x0 e il contenuto del registro x1 
         impostando in base al risultato ottenuto i flag N e Z.
      */
-    tst x0, x1
+    tst x1, x0
     beq true_case
 
     false_case:
