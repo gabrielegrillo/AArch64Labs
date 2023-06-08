@@ -19,6 +19,22 @@ main:
     stp x29, x30, [sp, #-16]!
     
     //Da completare
+    mov w1, #0
+
+    ldr x2, =A 
+    
+    ldr w1, [x2]        // carica il primo elemento
+    ldr w4, [x2, #4]    // carica il secondo elemento
+    eor w1, w1, w4      // XOR tra il primo e il secondo
+
+    ldr w4, [x2, #8]    // carica il terzo elemento
+    eor w1, w1, w4      // XOR con il risultato dello scorso XOR e con il terzo
+
+    ldr w4, [x2, #12]   // carica il quarto elemento
+    eor w1, w1, w4      // XOR con il risultato dello scorso XOR e con il quarto 
+
+    ldr x2, =A          // ricarico 
+    str w1, [x2]
 
     print 0
     print 1

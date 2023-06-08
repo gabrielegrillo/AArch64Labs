@@ -21,6 +21,20 @@ main:
 
     //Da completare
 
+    ldr x1, =A      // carico l'array A
+    ldr x2, =B      // carico l'array B
+    
+    ldrsb w3, [x1]  // carico il primo elemento dell'array A
+    ldrsb w4, [x2]  // carico il primo elemento dell'array B
+    and w3, w3, w4  // AND a[0] + b[0]
+    strb w3, [x1]   // carico il risultato come primo elemento di a
+
+    ldrsb w3, [x1, #1]  // carico il secondo elemento dell'array A
+    ldrsb w4, [x2, #1]  // carico il secondo elemento dell'array B
+    orr w3, w3, w4      // OR a[1] - b[1]
+    strb w3, [x1, #1]   // carico il risultato alla seconda posizione di a
+
+
     print 0
     print 1
     print 2

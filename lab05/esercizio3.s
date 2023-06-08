@@ -27,9 +27,9 @@ main:
     mov x0, #0b01001011
     mov x1, #0b00001111
     // punto a)
-    adds x20, x1, x0
+    //adds x20, x1, x0
     // punto b) 
-    //subs x20, x1, x0
+    subs x20, x1, x0
     print
     print_x20
 

@@ -14,6 +14,7 @@ La macro `print_32`
 L'istruzione `adr` è usata per calcolare l'indirizzo di una label, in questo caso una format string che stampa solo le prime 8 cifre. 
 La stessa cosa vale per la macro `print_64` però cambia la fmt.
 
+
 ### Esempio 1
     
 ```assembly
