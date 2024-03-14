@@ -1,5 +1,8 @@
-# AArch64 Labs
+# Esercitazioni Architettura Degli Elaboratori - A.A 2022/2023
 
-Assignments resolved for the lab of Computer Architecture (ARCHITETTURA DEGLI ELABORATORI) Class at Unical.
+Based on ARM.
 
-Do your assignments! Do your homework! STUDY!
+Here there is a proposal solution for Computer Architecture's exercises.
+
+In case of grammatical/spelling errors, feel free to make a pull request.
+
